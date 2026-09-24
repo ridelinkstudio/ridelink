@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RideLink Business Pages | Professional Business Pages Made Simple</title>
+
+<meta name="description" content="Give your business a professional online presence. Showcase products, services, prices and contact customers directly through WhatsApp.">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#ffffff;
+color:#222;
+line-height:1.6;
+}
+
+a{
+text-decoration:none;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+header{
+background:linear-gradient(135deg,#0b5fa5,#1e88e5);
+color:white;
+padding:20px 0;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+}
+
+.logo span{
+color:#ffd54f;
+}
+
+.nav-links{
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
+color:white;
+font-weight:bold;
+}
+
+.hero{
+background:linear-gradient(135deg,#0b5fa5,#1976d2);
+color:white;
+padding:90px 0;
+}
+
+.hero-content{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.hero h1{
+font-size:56px;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:25px;
+opacity:0.95;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+border-radius:8px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn-primary{
+background:#ffd54f;
+color:#222;
+}
+
+.btn-primary:hover{
+background:#ffca28;
+}
+
+.btn-secondary{
+background:white;
+color:#0b5fa5;
+margin-left:10px;
+}
+
+.demo-card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.demo-banner{
+background:linear-gradient(135deg,#8d4b20,#d98c4f);
+height:250px;
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
+padding:25px;
+color:white;
+}
+
+.demo-banner h2{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.demo-banner p{
+font-size:15px;
+}
+
+.section{
+padding:80px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.section-title p{
+color:#666;
+max-width:700px;
+margin:auto;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.feature{
+background:#fff;
+border:1px solid #eee;
+padding:25px;
+border-radius:15px;
+box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+.feature-icon{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.feature h3{
+margin-bottom:10px;
+}
+
+.feature p{
+color:#666;
+}
+
+.demo-section{
+background:#f8fafc;
+}
+
+.demo-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.business-demo{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.business-header{
+background:linear-gradient(135deg,#8d4b20,#d98c4f);
+color:white;
+padding:30px;
+text-align:center;
+}
+
+.business-icon{
+font-size:60px;
+margin-bottom:10px;
+}
+
+.business-header h3{
+font-size:30px;
+margin-bottom:5px;
+}
+
+.business-body{
+padding:20px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.product{
+background:#fff8ef;
+border-radius:10px;
+padding:15px;
+border:1px solid #f1dfc9;
+}
+
+.product-image{
+height:90px;
+border-radius:8px;
+background:linear-gradient(135deg,#c57b45,#f1c38e);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:40px;
+margin-bottom:10px;
+}
+
+.product strong{
+display:block;
+margin-bottom:5px;
+}
+
+.whatsapp-btn{
+display:block;
+background:#25d366;
+color:white;
+text-align:center;
+padding:14px;
+border-radius:10px;
+margin-top:20px;
+font-weight:bold;
+}
+
+.benefits{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.benefit{
+display:flex;
+gap:12px;
+align-items:flex-start;
+}
+
+.benefit-icon{
+color:#0b5fa5;
+font-size:20px;
+font-weight:bold;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.step{
+text-align:center;
+padding:25px;
+}
+
+.step-number{
+width:50px;
+height:50px;
+border-radius:50%;
+background:#e3f2fd;
+color:#0b5fa5;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+font-size:22px;
+margin:auto;
+margin-bottom:15px;
+}
+
+.business-types{
+background:#10202f;
+color:white;
+}
+
+.business-types .section-title p{
+color:#ccc;
+}
+
+.chips{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+}
+
+.chip{
+padding:12px 18px;
+border:1px solid rgba(255,255,255,0.2);
+border-radius:30px;
+}
+
+.cta{
+background:linear-gradient(135deg,#eaf5ff,#fff6e8);
+text-align:center;
+padding:90px 0;
+}
+
+.cta h2{
+font-size:46px;
+margin-bottom:15px;
+}
+
+.cta p{
+max-width:700px;
+margin:auto;
+margin-bottom:25px;
+color:#555;
+}
+
+footer{
+background:#111;
+color:#aaa;
+padding:35px 0;
+text-align:center;
+}
+
+@media(max-width:900px){
+
+.hero-content,
+.demo-grid{
+grid-template-columns:1fr;
+}
+
+.features{
+grid-template-columns:1fr;
+}
+
+.steps{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.nav-links{
+display:none;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container navbar">
+<div class="logo">Ride<span>Link</span></div>
+
+<div class="nav-links">
+<a href="#features">Features</a>
+<a href="#demo">Demo</a>
+<a href="#how">How It Works</a>
+<a href="#contact">Get Started</a>
+</div>
+</div>
+</header>
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<div>
+
+<h1>Your Business Deserves More Than Just A WhatsApp Number.</h1>
+
+<p>
+Give customers a professional place to discover your products,
+services, prices and contact you instantly.
+</p>
+
+<a href="#demo" class="btn btn-primary">View Demo</a>
+
+<a href="#contact" class="btn btn-secondary">Get Your Page</a>
+
+</div>
+
+<div class="demo-card">
+
+<div class="demo-banner">
+
+<h2>Maya's Kitchen & Treats</h2>
+
+<p>
+Homemade meals, cakes and treats made with care.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="features">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Everything Your Customers Need</h2>
+<p>
+A professional business page that helps customers understand
+what you offer and contact you quickly.
+</p>
+</div>
+
+<div class="features">
+
+<div class="feature">
+<div class="feature-icon">🏪</div>
+<h3>Business Profile</h3>
+<p>Show customers who you are and what your business does.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">🛍️</div>
+<h3>Products & Services</h3>
+<p>Display your products, services and important information.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">📸</div>
+<h3>Photo Gallery</h3>
+<p>Show your work with professional photos.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">💰</div>
+<h3>Prices & Offers</h3>
+<p>Highlight pricing and promotions.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">📱</div>
+<h3>WhatsApp Contact</h3>
+<p>Connect customers directly to your WhatsApp.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">🔳</div>
+<h3>QR Code Ready</h3>
+<p>Use on flyers, cards and advertising materials.</p>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<section class="section demo-section" id="demo">
+
+<div class="container demo-grid">
+
+<div class="business-demo">
+
+<div class="business-header">
+
+<div class="business-icon">🍰</div>
+
+<h3>Maya's Kitchen & Treats</h3>
+
+<p>Meals • Cakes • Treats</p>
+
+</div>
+
+<div class="business-body">
+
+<div class="product-grid">
+
+<div class="product">
+<div class="product-image">🍰</div>
+<strong>Celebration Cakes</strong>
+<small>From ₦18,000</small>
+</div>
+
+<div class="product">
+<div class="product-image">🍲</div>
+<strong>Home Meals</strong>
+<small>From ₦3,500</small>
+</div>
+
+<div class="product">
+<div class="product-image">🧁</div>
+<strong>Cupcakes</strong>
+<small>Custom Orders</small>
+</div>
+
+<div class="product">
+<div class="product-image">🎁</div>
+<strong>Gift Boxes</strong>
+<small>Special Packages</small>
+</div>
+
+</div>
+
+<a href="#" class="whatsapp-btn">
+💬 Order On WhatsApp
+</a>
+
+</div>
+
+</div>
+
+<div>
+
+<h2>A Page Built Around Your Business</h2>
+
+<div class="benefits">
+
+<div class="benefit">
+<div class="benefit-icon">✓</div>
+<div>Your business name and branding</div>
+</div>
+
+<div class="benefit">
+<div class="benefit-icon">✓</div>
+<div>Your products and services</div>
+</div>
+
+<div class="benefit">
+<div class="benefit-icon">✓</div>
+<div>Your photos and offers</div>
+</div>
+
+<div class="benefit">
+<div class="benefit-icon">✓</div>
+<div>Your WhatsApp contact details</div>
+</div>
+
+<div class="benefit">
+<div class="benefit-icon">✓</div>
+<div>Your location and service information</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="how">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Simple Process</h2>
+<p>
+You don't need to learn web design.
+We handle everything for you.
+</p>
+</div>
+
+<div class="steps">
+
+<div class="step">
+<div class="step-number">1</div>
+<h3>Send Details</h3>
+<p>Business information, photos and contact details.</p>
+</div>
+
+<div class="step">
+<div class="step-number">2</div>
+<h3>We Build It</h3>
+<p>We create a professional page for your business.</p>
+</div>
+
+<div class="step">
+<div class="step-number">3</div>
+<h3>Share It</h3>
+<p>Use your link on WhatsApp, Facebook and flyers.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section business-types">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Perfect For Many Businesses</h2>
+<p>
+Designed for small businesses that want a professional online presence.
+</p>
+</div>
+
+<div class="chips">
+
+<div class="chip">🍔 Food Businesses</div>
+<div class="chip">👗 Fashion</div>
+<div class="chip">💇 Beauty</div>
+<div class="chip">🛍️ Retail</div>
+<div class="chip">🔧 Repairs</div>
+<div class="chip">📸 Creatives</div>
+<div class="chip">🏠 Property</div>
+<div class="chip">📚 Tutors</div>
+<div class="chip">💼 Services</div>
+<div class="chip">🚚 Delivery</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta" id="contact">
+
+<div class="container">
+
+<h2>Ready To Put Your Business Online?</h2>
+
+<p>
+Give customers a professional page they can easily view,
+share and contact through WhatsApp.
+</p>
+
+<a href="https://wa.me/234XXXXXXXXXX" class="btn btn-primary">
+Start On WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<h3>RideLink</h3>
+
+<p>Professional Business Pages Made Simple</p>
+
+<p>© 2026 RideLink. All Rights Reserved.</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
